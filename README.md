@@ -8,7 +8,6 @@ Utilities.GetLocation()
 
 Utilities.GetSunMoonInfo(55.663426, 12.542953)
 
-
 Simple sample code:
 
 ```go
@@ -27,4 +26,3 @@ sunmoon := Utilities.GetSunMoonInfo(locInfo.Latitude, locInfo.Longitude)
 fmt.Printf("Sunset: %s\n", sunmoon.SunSet)
 
 ```
-
