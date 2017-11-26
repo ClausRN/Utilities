@@ -28,11 +28,6 @@ type SunMoonInfo struct {
 	MextFullMoon        string  `json:"nextFullMoon"`
 }
 
-// SunMoonInfoResponse contains information about moon/sun rise/set and misc other info
-type SunMoonInfoResponse struct {
-	Info []SunMoonInfo `json:"array"`
-}
-
 const (
 	fullsuninfoProvider = "https://soltider.dk/api?lat=55.663426&lng=12.542953"
 	suninfoProvider     = "https://soltider.dk/api?lat=%f&lng=%f"
