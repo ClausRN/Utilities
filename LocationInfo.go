@@ -48,7 +48,8 @@ func GetLocation() (data *LocationInfo) {
 
 	err = json.Unmarshal(body, &data)
 	if err != nil {
-		log.Printf("Couldn't decode json: %s", err)
+		log.Printf("Couldn't decode Location json: %s", err)
+		data = &LocationInfo{IP: "0.0.0.0"}
 	}
 	return
 }
